@@ -1,0 +1,19 @@
+{
+    "name": "proyecto-rifa",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "echo \"No build specified\" && exit 1",
+        "test": "echo \"No test specified\" && exit 1",
+        "start": "node index.js"
+        },
+    "author": "Gabi Vega",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/gabivega/proyecto-rifa/issues"
+        },
+        "homepage": "https://github.com/gabivega/proyecto-rifa#readme"
+        }
+   
+  
