@@ -4,16 +4,12 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "webpack build",
+        "build": "echo \"No build specified\" && exit 1",
         "test": "echo \"No test specified\" && exit 1",
         "start": "node index.js"
-        },
-    "author": "Gabi Vega",
+         },
+    "author": "",
     "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/gabivega/proyecto-rifa/issues"
-        },
-        "homepage": "https://github.com/gabivega/proyecto-rifa#readme"
-        }
-   
-  
+    "dependencies": {
+    }
+  }
