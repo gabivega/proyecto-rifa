@@ -1,0 +1,462 @@
+*{
+    box-sizing: border-box;
+}
+header {
+    background-color: transparent;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    max-height: 90%;
+}
+nav {
+    font-weight: 600;
+    padding-right: 10px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.logo-img {
+    max-height: 50px;
+}
+
+@media (max-width: 350px) {
+    header
+}
+body {
+    background: linear-gradient(
+        to right, #86E5FF, #5BC0F8 , #0081C9);
+    background-size: 400% 400%;
+    animation: animate-background 20s infinite ease-in-out;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    display: block;
+}
+
+@keyframes animate-background {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.contenedor-principal {
+    background-color: rgba(250, 250, 250, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 90%;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.header {
+    background-color: #f7f7f;
+    padding: 20px 40px;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: center;
+}
+
+.header h2 {
+   margin:0;
+}
+
+.form {
+   color: white;
+   padding: 20px 20px; 
+   width: 90%;
+   margin: auto;
+   background-color:transparent;
+   border: none;
+   }
+#form-header {
+    display: none;
+}
+
+.form label {
+    display: inline-block;
+    margin: 15px 0 10px  0;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.form input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    }
+#botonSubmit {
+    margin-top: 15px;
+}
+.boton {
+    background-color: #E14D2A;
+    width: 100%;
+    color: white;
+    border: 2px solid #E14D2A;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 4px;;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.boton:hover {
+    background-color: #ff5732;
+    }
+
+/* hide form */
+.hide-form {
+    display: none;
+}
+/*hide header*/
+.hide-header {
+    display:none
+}
+
+.popup-confirmacion {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgb(0, 0, 0, 0.3);
+    max-width: 100%;
+    overflow: hidden;
+    margin left: 0px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    font-family: inherit;
+    font-size: 16px;
+    }
+
+ .popup-confirmacion header {
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: center;
+}
+.popup-confirmacion h2 {
+    width: 100%;
+}
+
+.popup-confirmacion li {
+    margin-bottom: 15px;
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+.contenedor-botones {
+    display: flex;
+    padding: 30px 40px; 
+    align-items: center;
+    justify-content: center;
+}
+.boton2 {
+    background-color: #E14D2A;
+    width: 100%;
+    color: white;
+    border: 2px solid #E14D2A;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 4px;;
+    text-transform: capitalize;
+    display: inline-block;
+    font-weight: bold;
+}
+.boton2:hover {
+    background-color: #ff5732;
+}
+.boton-cancelar {
+    margin-right: 5px;
+}
+.boton-confirmar {
+    margin-left: 5px;
+}
+
+/* contenedor tickets */
+
+.contenedor-numeros {
+    background-color: rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+    min-width: 200px;
+    max-width: 80%;
+    border: 1px solid rgb(255, 255, 255);
+
+    display: none;
+    flex-wrap: wrap;
+    padding-left: auto;
+    padding-right: auto;
+    margin-top: 25px;
+    align-content: space-around;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+}
+
+.contenedor-show {
+    display: flex;
+    }
+/* style numeros rifa */
+
+.ticket {
+    border: 2px solid #46942c;
+    user-select: none;
+    padding: 10px;
+    color: white;
+    height: 70px;
+    width: 70px;
+    margin: 0.3em;
+    background: #54B435;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.ticket:hover {
+    background-color: #66d640;
+    cursor: pointer;
+}
+#titulo-tickets {
+    display: none;
+}
+.titulo-tickets-show {
+    display: block;
+    font-size: 20px;
+    top: 10px;
+}
+
+.ticketSeleccionado {
+    border: 2px solid #af0216;
+    user-select: none;
+    padding: 0;
+    color: white;
+    height: 70px;
+    width: 70px;
+    margin: 0.3em;
+    background: #D2001A;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 3px;
+    /*word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;*/
+    overflow: hidden;
+    font-size: 0.75em;
+    padding: auto;
+}
+
+.ticketSeleccionado:hover {
+    background-color: red;
+    border: 2px solid red;
+    cursor: default;
+}
+
+/*.contenedor-contador {
+    display: none ;
+    border: 2px solid black;
+    max-width: 90%;
+    margin-top: 0px;
+}*/
+
+.count-ganador-container {
+    display: none;
+    border: none;
+    flex-wrap: wrap;
+}
+
+.titulo {
+    font-size: 1.5em;
+    color: white;
+    padding: 0;
+    margin: 0;
+    }
+
+.contenedor-contador {
+    padding: 0;
+    display: none;
+    border: 1px solid rgb(255, 255, 255);
+    max-width: 30%;
+    min-width: 280px;
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: top;
+    margin-top: 0;
+    margin-bottom: 10px;;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.contador {
+    font-size: 16px;
+    font-weight: bold;
+    max-width: 30%;
+}
+.countdown-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.countdown-container div {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    justify-content: center;
+    }
+#horas {
+    text-align: center;
+    }
+#minutos {
+    text-align: center;
+}
+
+#segundos {
+    text-align: center;
+}
+
+.countdown-container p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f7f7f7;
+    min-width: 15px ;
+    text-align: left;
+    margin: 0;
+}
+
+.countdown-container span {
+    color: #f7f7f7;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.random-number-div {
+    display: none;
+    left: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    margin: 0px auto;
+    max-width: 30%;
+    min-width: 280px;
+    height: 140px;
+    border-radius: 5px;;
+    background-color:rgba(0, 0, 0, 0.1);
+    padding: 0px;
+}
+/*.random-number-div h2 {
+    font-size: 1.5em;
+    color: white;
+    padding: 0;
+    
+} */   
+#random-number {
+    padding: 0;
+    margin: 0 , auto;
+    color: white;
+    font-weight: bold;
+}     
+.lista-tickets {
+     padding: 15px;
+     display: block;
+     overflow: hidden;
+}
+.lista-tickets p {
+    color: black;
+    font-size: 1.25em;
+    padding: 5px 10px;
+    margin: 0px , 0px , 30px , 30px;
+}
+.numbers-gif {
+    width: 60px;
+    height: 40px;
+    margin: 30px 10px 10px 20px;
+}
+
+.boton-reload {
+    background-color: #E14D2A;
+    width: 50%;
+    min-width: 100px;
+    height: 40px;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 4px;;
+    text-transform: capitalize;
+}
+.boton-reload:hover {
+    background-color: #ff5732;
+}
+
+.name {
+padding: 0;
+margin: 0;
+color: white;
+}
+
+.lista {
+    display: none
+}
+ .div-botones {
+    display: none;
+    overflow: hidden;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.botones {
+    background-color: #E14D2A;
+    width: 150px;
+    height: 68px;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 4px;;
+    text-transform: capitalize;
+    display: inline-block;
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+.botones:hover {
+    background-color: #ff5732;
+    cursor: pointer;
+}
+
+.total-ventas {
+    text-transform: capitalize;
+    font-weight: bold;
+    color: white;
+    font-family: inherit
+}
