@@ -7,11 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a5f53bebb7.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
    
- 
 </head>
 <body>
    <div class="header-container">
@@ -21,12 +18,10 @@
            <a href="" class="nav-link">inicio</a>
            <a href="" class="nav-link">ayuda</a>
            <a href="" class="nav-link">crear cuenta</a>
-        </nav>
-        
-  </header>
-   </div>
-   
-    <div class="contenedor-principal"  id="formulario">
+        </nav>        
+      </header>
+   </div> 
+   <div class="contenedor-principal"  id="formulario">
         <form class="form" id="form">
             <div id="form-header">
                <h2> Crear Rifa</h2>
@@ -35,16 +30,13 @@
                 <br>
                 <input type="number" id="cantidad-numeros" value="20" placeholder="100" min="10" max="1000" required>
                 <br>
-            
                 <label>Precio Por Numero</label>
                 <br>
                 <input type="number" id="precio-numero" placeholder="100" value="200" min="100" max="10000" required>
-                <br>
-             
+                <br>             
                 <label title="Fecha en que se realiza el sorteo">Fecha Sorteo</label>
                 <br>
                 <input type="datetime-local" id="fecha-sorteo" name="fecha-sorteo" required>     
-             
                 <input name="enviar" type="submit" value="crear rifa" class="boton" id="botonSubmit" >
         </form>   
   
@@ -130,34 +122,11 @@
       <!-- LISTA TICKETS COMPRADOS-->
          <div class="lista-tickets">
          </div>
+
        <!-- JAVASCRIPT-->
     <script src="script.js"></script>
 
-      <!-- FIREBASE-->
-
-
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
     
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyAv0PMLeMQeEwxwOcSGq_7IiWgNlgw_IRk",
-        authDomain: "raffle-generator-topdevs.firebaseapp.com",
-        projectId: "raffle-generator-topdevs",
-        storageBucket: "raffle-generator-topdevs.appspot.com",
-        messagingSenderId: "457428651187",
-        appId: "1:457428651187:web:02f0363a47d8d1ff0d34c6",
-        measurementId: "G-W9YSXGX12S"
-      };
-    
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script>
+       </script>
 </body>
 </html>

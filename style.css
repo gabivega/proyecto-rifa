@@ -457,6 +457,6 @@ color: white;
 .total-ventas {
     text-transform: capitalize;
     font-weight: bold;
-    color: white;
+    color: black;
     font-family: inherit
 }
