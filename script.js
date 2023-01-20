@@ -421,11 +421,11 @@ function displayLista() {
 let ticketsVendidos = 0;
 let totalventas = document.querySelector(".total-ventas");
 
-function calculoventas() {
-    console.log(ticketsVendidos);
- total = Number (precioNum.value) * ticketsVendidos;
- totalventas.innerHTML = "tickets vendidos: " + ticketsVendidos + "- " + "total recaudado: " + total;
-}
+//function calculoventas() {
+//    console.log(ticketsVendidos);
+ //total = Number (precioNum.value) * ticketsVendidos;
+ //totalventas.innerHTML = "tickets vendidos: " + ticketsVendidos + "- " + "total recaudado: " + total;
+//}
 
 
 
