@@ -301,11 +301,11 @@ function guardarNombre() {
     ${generarLista(lista)}`;
     nombreComprador.value = "";
     ticketsVendidos = ticketsVendidos + 1;
-    calculoventas();
+    //calculoventas();
     // listaNombres.style.display = "inline-block"
     dialogTicket.close();
     return nro;
-    
+   
 }
 
 
@@ -381,7 +381,7 @@ function borrarComprado() {
         let newticket = ticket.slice(0,indice);
         nroTicket.innerHTML = newticket;
         ticketsVendidos = ticketsVendidos - 1;
-        calculoventas();
+        //calculoventas();
           }
     //let nombre= nombreComprador.value;
       nroTicket.classList.add("ticket")
